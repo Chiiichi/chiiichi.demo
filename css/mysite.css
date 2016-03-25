@@ -1,0 +1,151 @@
+
+/*@group general styles
+--------------------------------------------------------------------------*/
+* {
+	margin: 0 0;
+	padding: 0 0;
+}
+body, html, #main {
+ /* important */
+ height: 100%;
+}
+/*@group helper styles
+--------------------------------------------------------------------------*/
+.clear:after {
+	content: "";
+	display: block; 
+	height: 0;
+	width: 100%;
+}
+
+/*@group page structure
+--------------------------------------------------------------------------*/
+header {
+	width: 100%;
+}
+/*导航区域*/
+nav{
+	width: 100%;
+	height: 40px;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+}
+
+/*logo区*/
+#logo{
+	float: left;
+	height: 40px;
+	background-color: transparent;
+	margin-left: 30px;
+}
+#logo img {
+	display: inline-block;
+	height: 100%;
+	margin: 0 10px;
+}
+
+nav ul {
+	float: right;
+	margin-right: 30px;
+}
+nav ul li {
+	line-height: 40px;
+	display: inline-block;
+	width: 50px;
+	margin: auto 10px;
+}
+nav a {
+	color: white;
+	text-decoration: none;
+}
+nav a:hover {
+	color: rgba(255,255,255,0.5);
+}
+nav ul li:hover {
+	line-height: 40px;
+	display: inline-block;
+	width: 50px;
+	margin: auto 10px;
+}
+
+/*内容区域*/
+	/*视差滚动布局*/
+.cd-fixed-bg {
+	min-height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+ 
+.cd-fixed-bg.cd-bg-1 {
+	background-image: url("../img/cd-background-1.jpg");
+}
+.cd-fixed-bg.cd-bg-2 {
+	background-image: url("../img/cd-background-2.jpg");
+}
+.cd-fixed-bg.cd-bg-3 {
+	background-image: url("../img/cd-background-3.jpg");
+}
+.cd-fixed-bg.cd-bg-4 {
+	background-image: url("../img/cd-background-4.jpg");
+}
+ 
+.cd-scrolling-bg {
+	min-height: 100%;
+}
+/*@group page components
+--------------------------------------------------------------------------*/
+/*第一页内容*/
+.cd-bg-1 {
+	display: flex;
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center; 
+}
+.cd-bg-1 #container{
+	-webkit-filter: blur(0);
+	width: 500px;
+
+}
+.head-pic-box {
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	overflow: hidden;
+	margin: 20px auto;
+}
+.head-pic {
+	width: 100%;
+	height: 100%;
+
+}
+#intro {
+	box-sizing: border-box;
+	padding: 20px;
+	min-width: 400px;
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 10px;
+	box-shadow: 3px 3px 10px ;	
+}
+.cd-bg-1 h2 {
+	color: #000;
+	text-align: center;
+	margin: 20px 20px;
+}
+.cd-bg-1 p {
+
+}
+
+/*第二节内容*/
+.cd-color-1 {
+	background-color: rgba(255,255,255,0.5);
+}
+/*@group overrides
+--------------------------------------------------------------------------*/
+
+
