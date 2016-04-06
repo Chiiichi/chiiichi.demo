@@ -123,42 +123,30 @@ nav ul li:hover {
 }
 
 /*内容区域*/
-	/*视差滚动布局*/
-.cd-fixed-bg {
+	/*视差滚动布局*/ 
+
+
+
+.cd-fixed-bg.cd-bg-3 {
+	min-height: 100%;
+	background-image: url("../img/cd-background-3.jpg");
+}
+.cd-fixed-bg.cd-bg-4 {
+	min-height: 100%;
+	background-image: url("../img/cd-background-4.jpg");
+}
+ 
+/*@group page components
+--------------------------------------------------------------------------*/
+/*第一页内容*/
+.section1 {
 	min-height: 100%;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center center;
-}
- 
-.cd-fixed-bg.cd-bg-1 {
 	background-image: url("../img/cd-background-1.jpg");
 	background-size: cover;
-}
-.cd-fixed-bg.cd-bg-2 {
-	background-color: #222;
-	background-image: url("../img/asfalt-light.png");
-	background-repeat: repeat;
-	-webkit-box-shadow: 0 8px 10px rgba(0,0,0,.5);
-	   -moz-box-shadow: 0 8px 10px rgba(0,0,0,.5);
-		-ms-box-shadow: 0 8px 10px rgba(0,0,0,.5);
-		 -o-box-shadow: 0 8px 10px rgba(0,0,0,.5);
-	        box-shadow: 0 8px 10px rgba(0,0,0,.5); 
-}
-.cd-fixed-bg.cd-bg-3 {
-	background-image: url("../img/cd-background-3.jpg");
-}
-.cd-fixed-bg.cd-bg-4 {
-	background-image: url("../img/cd-background-4.jpg");
-}
- 
-.cd-scrolling-bg {
-	min-height: 100%;
-}
-/*@group page components
---------------------------------------------------------------------------*/
-/*第一页内容*/
-.cd-bg-1 {
+
 	display: flex;
 	display: -webkit-flex;
 	-webkit-flex-direction: row;
@@ -168,7 +156,7 @@ nav ul li:hover {
 	-webkit-justify-content: center;
 	justify-content: center; 
 }
-.cd-bg-1 #container{
+.section1 #container{
 	-webkit-filter: blur(0);
 	width: 500px;
 
@@ -193,17 +181,18 @@ nav ul li:hover {
 	border-radius: 10px;
 	box-shadow: 3px 3px 10px;
 }
-.cd-bg-1 h2 {
+.section1 h2 {
 	color: #000;
 	text-align: center;
 	margin: 20px 20px;
 }
-.cd-bg-1 p {
+.section1 p {
 
 }
 
 /*第二页内容*/
-.cd-color-1 {
+.section2 {
+	min-height: 100%;
 	background-color: #fff;
 	position: relative;
 	overflow:hidden;
@@ -400,7 +389,7 @@ nav ul li:hover {
 		 -o-transform:rotateY(180deg);
 			transform:rotateY(180deg);
 }
-.cd-color-1 article {
+.section2 article {
 	display: block;
 	height: 100%;
 	box-sizing: border-box;
@@ -408,57 +397,36 @@ nav ul li:hover {
 	width: 50%;
 	float: left;
 }
-.cd-color-1 article h2 {
+.section2 article h2 {
 	font-size: 50px;
 	margin: 25px 0;
 }
-.cd-color-1 article p {
+.section2 article p {
 	font-size: 20px;
 	line-height: 20px;
 	margin-top: 40px;
 }
 /*第三页内容*/
-.cd-bg-2 {
-	display: block;
-	height: 100%;
-}
-.cd-bg-2 article {
-	float: right;
-	display: block;
-	width: 50%;
-	box-sizing: border-box;
-	padding: 100px;
-	color: #fff;
-}
-.cd-bg-2 article h2 {
-	font-size: 50px;
-	margin: 25px 0;
-	color: #fff;
-}
-.cd-bg-2 article p {
-	font-size: 30px;
-	line-height: 30px;
-	margin-top: 40px;
-	padding: 50px;
-}
-.cd-bg-2 .img-box {
+.section3 {
 	position: relative;
-	float: left;
-	display: block;
-	width: 50%;
-	height: 100%;
-	box-sizing: border-box;
+	min-height: 100%;
+	background-color: #222;
+	background-image: url("../img/asfalt-light.png");
+	background-repeat: repeat;
+	-webkit-box-shadow: 0 8px 10px rgba(0,0,0,.5);
+	   -moz-box-shadow: 0 8px 10px rgba(0,0,0,.5);
+		-ms-box-shadow: 0 8px 10px rgba(0,0,0,.5);
+		 -o-box-shadow: 0 8px 10px rgba(0,0,0,.5);
+	        box-shadow: 0 8px 10px rgba(0,0,0,.5); 
 }
-.cd-bg-2 .img-group {
+.section3 .img-group {
+	float: left;
 	height: 380px;
-	width: 720px;
+	max-width: 720px;
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -190px;
-	margin-left: -360px;
+	top: 35%;
+	margin-left: 100px;
 	box-sizing: border-box;
-
 }
 .img-group img {
 	display: block;
@@ -466,6 +434,24 @@ nav ul li:hover {
 	width: 200px;
 	height: 150px;
 	margin: 20px 20px;
+}
+.section3 article {
+	float: right;
+	display: block;
+	max-width: 500px;
+	color: #fff;
+	box-sizing: border-box;
+}
+.section3 article h2 {
+	font-size: 50px;
+	margin: 25px 0;
+	color: #fff;
+}
+.section3 article p {
+	font-size: 30px;
+	line-height: 30px;
+	margin-top: 40px;
+	padding: 50px;
 }
 /*@group overrides
 --------------------------------------------------------------------------*/
