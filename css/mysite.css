@@ -420,9 +420,12 @@ nav ul li:hover {
 /*第三页内容*/
 .cd-bg-2 {
 	display: block;
+	height: 100%;
 }
 .cd-bg-2 article {
+	float: right;
 	display: block;
+	width: 50%;
 	box-sizing: border-box;
 	padding: 100px;
 	color: #fff;
@@ -436,13 +439,33 @@ nav ul li:hover {
 	font-size: 30px;
 	line-height: 30px;
 	margin-top: 40px;
+	padding: 50px;
 }
-.img-group {
-	margin: 0 auto;
+.cd-bg-2 .img-box {
+	position: relative;
+	float: left;
+	display: block;
+	width: 50%;
+	height: 100%;
+	box-sizing: border-box;
+}
+.cd-bg-2 .img-group {
+	height: 380px;
+	width: 720px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -190px;
+	margin-left: -360px;
+	box-sizing: border-box;
+
 }
 .img-group img {
+	display: block;
+	float: left;
 	width: 200px;
-	height: 200px;
+	height: 150px;
+	margin: 20px 20px;
 }
 /*@group overrides
 --------------------------------------------------------------------------*/
